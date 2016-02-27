@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Praktikum11-Kalkulator2</string>
+    <string name="action_settings">Settings</string>
+    <string name="numAngka1"></string>
+    <string name="numAngka2"></string>
+    <string name="samaDengan">=</string>
+    <string name="lblHasil">Hasil</string>
+    <string-array name="operasi">
+        <item>Pilih Operasi</item>
+        <item>x</item>
+        <item>/</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+</resources>

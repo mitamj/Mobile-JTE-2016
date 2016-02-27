@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.praktikum12_kalkulator3.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numAngka1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/numAngka1"
+        android:layout_alignRight="@+id/numAngka1"
+        android:layout_alignEnd="@+id/numAngka1"
+        android:id="@+id/rgrp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kali"
+            android:id="@+id/kali"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bagi"
+            android:id="@+id/bagi"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah"
+            android:id="@+id/tambah"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kurang"
+            android:id="@+id/kurang"
+            android:checked="false"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numAngka2"
+        android:layout_below="@+id/rgrp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/samaDengan"
+        android:id="@+id/button"
+        android:layout_below="@+id/numAngka2"
+        android:onClick="onClickSamaDengan"
+        android:layout_alignRight="@+id/numAngka2"
+        android:layout_alignEnd="@+id/numAngka2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lblHasil"
+        android:id="@+id/lblHasil"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

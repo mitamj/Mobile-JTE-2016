@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tugas04-KalkulatorKompleks</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtTambah">+</string>
+    <string name="txti">i</string>
+    <string name="btnEqual">=</string>
+    <string name="txtHasil">Hasil</string>
+    <string-array name="Operasi">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+    </string-array>
+</resources>

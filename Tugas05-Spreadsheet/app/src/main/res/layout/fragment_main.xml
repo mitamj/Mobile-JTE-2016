@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.tugas05_spreadsheet.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/num11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:width="100dp"
+        android:text="@string/kosong" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/num12"
+        android:width="100dp"
+        android:text="@string/kosong"
+        android:layout_above="@+id/num21"
+        android:layout_alignLeft="@+id/hsl32"
+        android:layout_alignStart="@+id/hsl32" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/num21"
+        android:width="100dp"
+        android:layout_below="@+id/num11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/kosong" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/num22"
+        android:width="100dp"
+        android:layout_alignBottom="@+id/num21"
+        android:layout_alignLeft="@+id/num12"
+        android:layout_alignStart="@+id/num12"
+        android:text="@string/kosong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hasil"
+        android:id="@+id/hsl13"
+        android:width="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hasil"
+        android:id="@+id/hsl23"
+        android:width="80dp"
+        android:layout_alignTop="@+id/num22"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/num22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hasil"
+        android:id="@+id/hsl31"
+        android:width="100dp"
+        android:layout_below="@+id/num21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hasil"
+        android:id="@+id/hsl32"
+        android:width="100dp"
+        android:layout_alignTop="@+id/hsl31"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/hsl32"
+        android:layout_alignLeft="@+id/hsl23"
+        android:layout_alignStart="@+id/hsl23"
+        android:textStyle="bold|normal"
+        android:onClick="onClickTambah" />
+
+</RelativeLayout>

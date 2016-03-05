@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_main"
+    tools:context="id.ac.unsyiah.elektro.mobile.fragment01.MainActivityFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEng"
+        android:id="@+id/btnEng"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickEnglish"
+        android:layout_alignRight="@+id/btnInd"
+        android:layout_alignEnd="@+id/btnInd"
+        android:textStyle="bold"
+        android:textColor="#0217ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnInd"
+        android:id="@+id/btnInd"
+        android:layout_below="@+id/btnEng"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickIndonesia"
+        android:textStyle="bold"
+        android:textColor="#0217ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAceh"
+        android:id="@+id/btnAceh"
+        android:layout_below="@+id/btnInd"
+        android:layout_alignRight="@+id/btnInd"
+        android:layout_alignEnd="@+id/btnInd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickAceh"
+        android:textStyle="bold"
+        android:textColor="#0217ff" />
+</RelativeLayout>

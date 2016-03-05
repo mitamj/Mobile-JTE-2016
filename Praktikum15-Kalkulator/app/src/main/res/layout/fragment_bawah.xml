@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.praktikum15_kalkulator.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satu"
+        android:id="@+id/satu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick1"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dua"
+        android:id="@+id/dua"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick2"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiga"
+        android:id="@+id/tiga"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick3"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empat"
+        android:id="@+id/empat"
+        android:layout_alignTop="@+id/lima"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick4"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lima"
+        android:id="@+id/lima"
+        android:layout_below="@+id/dua"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick5"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enam"
+        android:id="@+id/enam"
+        android:layout_alignBottom="@+id/lima"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick6"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tujuh"
+        android:id="@+id/tujuh"
+        android:layout_below="@+id/empat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick7"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delapan"
+        android:id="@+id/delapan"
+        android:layout_alignTop="@+id/tujuh"
+        android:layout_alignLeft="@+id/lima"
+        android:layout_alignStart="@+id/lima"
+        android:onClick="onClick8"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sembilan"
+        android:id="@+id/sembilan"
+        android:layout_below="@+id/empat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick9"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kosong"
+        android:id="@+id/kosong"
+        android:layout_below="@+id/tujuh"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick0"
+        android:textStyle="bold"
+        android:background="#00ff99"
+        android:gravity="center" />
+</RelativeLayout>

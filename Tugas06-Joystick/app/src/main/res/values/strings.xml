@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tugas06-Joystick</string>
+    <string name="action_settings">Settings</string>
+    <string name="atas">ATAS</string>
+    <string name="kanan">KANAN</string>
+    <string name="kiri">KIRI</string>
+    <string name="bawah">BAWAH</string>
+</resources>

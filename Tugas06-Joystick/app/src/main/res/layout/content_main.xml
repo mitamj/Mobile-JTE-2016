@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:name="id.ac.unsyiah.elektro.mobile.tugas06_joystick.MainActivityFragment"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_main"
+        android:layout_weight="0.31" />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragmentbawah"
+        android:name="id.ac.unsyiah.elektro.mobile.tugas06_joystick.FragmentBawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_bawah"
+        android:layout_weight="0.81" />
+
+</LinearLayout>
